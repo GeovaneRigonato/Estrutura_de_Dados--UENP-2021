@@ -1,31 +1,38 @@
+package Atividade_avaliativa_Lista_1_26_07_2021;
+
+
+/*Escrever um algoritmo que lê um vetor N (20) e que imprima os valores de N.
+Troque, a seguir, o 1o elemento com o último, o 2o com o penúltimo etc. até o
+10o com o 11o e escreva o vetor N assim modificado.*/
 import java.util.Scanner;
 
 public class Ex4 {
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-            int numero[]=new int [20];
-            int i;
-            int j;
-            int aux;
-for (int z = 0; z < 20; z++) {
-numero[z] = sc.nextInt();
- }
-        for(i=0;i<20;i++){
-            System.out.println("a[" + i + "] = " +numero[i]);
+        Scanner teclado = new Scanner(System.in);
+        int vetor[] = new int[20];
+
+        int aux;
+        for (int i = 0; i < 20; i++) {
+            vetor[i] = teclado.nextInt();
+        }
+        for (int i = 0; i < 20; i++) {
+            System.out.println("a[" + i + "] = " + vetor[i]);
         }
         System.out.println();
 
-i = 0;
-j = numero.length - 1;
-        do{
-            aux=numero[i];
-            numero[i]=numero[j];
-            numero[j]=aux;
-            i++;
+        int z = 0;
+        int j = vetor.length - 1;
+
+        do {
+            aux = vetor[z];
+            vetor[z] = vetor[j];
+            vetor[j] = aux;
+            z++;
             j--;
-        } while(i < j);
-        for(j=0;j<20;j++){
-            System.out.println("b[" + j + "] = " +numero[j]);
+        } while (z< j);
+        for (j = 0; j < 20; j++) {
+            System.out.println("b[" + j + "] = " + vetor[j]);
         }
     }
 }

@@ -9,6 +9,17 @@ package Atividade_avaliativa_Lista_1_26_07_2021;
  *
  * @author geovane_rigonato
  */
+
+
+
+/*Escreva um algoritmo que lê uma matriz M (5,5) e calcule as somas:
+
+a) da linha 4 de M;
+b) da coluna 2 de M;
+c) da diagonal principal;
+d) da diagonal secundária;
+e) de todos os elementos da matriz;
+f) Escreva estas somas e a matriz;*/
 public class Ex6 {
     public static void main(String[] args) {
         int M[][] = new int[5][5];
