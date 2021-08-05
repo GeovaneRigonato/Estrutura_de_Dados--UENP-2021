@@ -9,11 +9,12 @@ package Atividade_avaliativa_Lista_1_26_07_2021.Ex8;
  *
  * @author geovane_rigonato
  */
+
 public class Conta {
 
     private String nomeTitular;
-    private int numeroConta;
-    private int numeroAgencia;
+    private Integer numeroConta;
+    private Integer numeroAgencia;
     private float saldoConta;
 
     public Conta() {
@@ -23,16 +24,23 @@ public class Conta {
         this.saldoConta = 0;
     }
 
-    public Conta(String nomeTitular, int numeroConta, int numeroAgencia) {
+    public Conta(String nomeTitular, Integer numeroConta, Integer numeroAgencia) {
         this.nomeTitular = nomeTitular;
         this.numeroConta = numeroConta;
         this.numeroAgencia = numeroAgencia;
         this.saldoConta = 0;
     }
-
-
-    public void buscar(String nomeTitular) {
+    
+    public  void adicionarDinheiro(float saldo){
+        this.saldoConta = saldo;
     }
+     public  void retirarDinheiro(float saldo){
+        this.saldoConta = saldoConta-saldo;
+    }
+        public String toString(){
+            return "Nome: "+this.nomeTitular+ " Nº: "+this.numeroConta;
+        }
+    
 
     public String getNomeTitular() {
         return nomeTitular;

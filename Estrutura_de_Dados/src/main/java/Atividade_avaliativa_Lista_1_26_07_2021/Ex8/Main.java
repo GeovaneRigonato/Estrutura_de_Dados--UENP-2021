@@ -27,7 +27,7 @@ public class Main {
             contas[pont_ultimo] = c;
         }
     }
-    
+
         public static int buscar(String nomeTitular) {
         for (int i = 0; i <= pont_ultimo; i++) {
             if (contas[i].getNomeTitular().equals(nomeTitular)) {
@@ -39,7 +39,14 @@ public class Main {
         System.out.println("Elemento " + nomeTitular + " nao localizado ");
         return -1;
     }
-
+        
+            public static void mostrarContas() {
+        for (int i = 0; i < pont_ultimo+1; i++) {
+            System.out.println("Conta " + i + " -> "+contas[i].toString()+" Saldo: R$ "+ contas[i].getSaldoConta());
+        }
+    }
+        
+        
     public static void main(String[] args) {
 
         Conta c1 = new Conta("Geovane", 1111, 0001);
@@ -52,7 +59,21 @@ public class Main {
         cadastrar(c4);
         Conta c5 = new Conta("Cascão", 5555, 0005);
         cadastrar(c5);
+        mostrarContas();
+        System.out.println("\nBuscando elemento..........................");
         buscar("João");
+        c1.adicionarDinheiro(25);
+        c2.adicionarDinheiro(10);
+        c3.adicionarDinheiro(350);
+        c4.adicionarDinheiro(2500);
+        c5.adicionarDinheiro(1005);
+        System.out.println("\nAdicionando os saldos..........................");
+        mostrarContas();
+        c1.retirarDinheiro(10);
+        c2.retirarDinheiro(2);
+        c3.retirarDinheiro(200);
+        System.out.println("\nRetirando os saldos..........................");
+        mostrarContas();
         
     }
 }

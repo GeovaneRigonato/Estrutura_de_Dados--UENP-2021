@@ -12,10 +12,10 @@ public class Ex4 {
         Scanner teclado = new Scanner(System.in);
         int vetor[] = new int[20];
 
-        int aux;
         for (int i = 0; i < 20; i++) {
             vetor[i] = teclado.nextInt();
         }
+
         for (int i = 0; i < 20; i++) {
             System.out.println("a[" + i + "] = " + vetor[i]);
         }
@@ -23,14 +23,14 @@ public class Ex4 {
 
         int z = 0;
         int j = vetor.length - 1;
-
+        int aux;
         do {
             aux = vetor[z];
             vetor[z] = vetor[j];
             vetor[j] = aux;
             z++;
             j--;
-        } while (z< j);
+        } while (z < j);
         for (j = 0; j < 20; j++) {
             System.out.println("b[" + j + "] = " + vetor[j]);
         }
