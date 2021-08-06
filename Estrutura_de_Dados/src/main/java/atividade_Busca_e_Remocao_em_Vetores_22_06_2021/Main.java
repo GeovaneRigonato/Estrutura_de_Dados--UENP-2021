@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Atividade_Busca_e_Remocao_em_Vetores_22_06_2021;
+package atividade_Busca_e_Remocao_em_Vetores_22_06_2021;
 
 /**
  *

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Atividade_Introducao_ao_Java_28_05_2021.Exercicio2;
+package atividade_Introducao_ao_Java_28_05_2021.Exercicio2;
 
 /**
  *

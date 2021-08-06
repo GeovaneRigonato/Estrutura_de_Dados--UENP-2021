@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Atividade_Matrizes_29_06_2021.Exercicio1;
+package atividade_Matrizes_29_06_2021.Exercicio1;
 
 /**
  *

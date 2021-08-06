@@ -1,4 +1,4 @@
-package Atividade_avaliativa_Lista_1_26_07_2021;
+package atividade_avaliativa_Lista_1_26_07_2021;
 
 //Faça um algoritmo que copie o conteúdo de um vetor em um segundo vetor.
 

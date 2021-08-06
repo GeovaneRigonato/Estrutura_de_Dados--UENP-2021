@@ -1,4 +1,4 @@
-package Atividade_avaliativa_Lista_1_26_07_2021;
+package atividade_avaliativa_Lista_1_26_07_2021;
 
 
 /*Escrever um algoritmo que lê um vetor N (20) e que imprima os valores de N.
